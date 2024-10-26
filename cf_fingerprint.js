@@ -1,7 +1,7 @@
 /**
  * cf-fingerprint v0.0.1
  * GNU General Public License v3.0
- * https://github.com/arschedev/cf_fingerprint
+ * https://github.com/arschedev/cf-fingerprint
  */
 
 function cf_fingerprint(buffer) {
