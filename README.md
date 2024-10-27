@@ -14,19 +14,19 @@ Add [cf_fingerprint.js](https://github.com/arschedev/cf-fingerprint/blob/main/cf
 
 ```js
 function readAsArrayBuffer(file) {
-	return new Promise((resolve, reject) => {
-		const reader = new FileReader()
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader()
 
-		reader.onload = (event) => {
-			resolve(event.target.result)
-		}
+        reader.onload = (event) => {
+            resolve(event.target.result)
+        }
 
-		reader.onerror = (error) => {
-			reject(error)
-		}
+        reader.onerror = (error) => {
+            reject(error)
+        }
 
-		reader.readAsArrayBuffer(file)
-	})
+        reader.readAsArrayBuffer(file)
+    })
 }
 
 const buffer = new Uint8Array(await readAsArrayBuffer(file))
