@@ -9,8 +9,9 @@ Based on [curseforge-fingerprint](https://github.com/meza/curseforge-fingerprint
 Add [cf_fingerprint.js](https://github.com/arschedev/cf-fingerprint/blob/main/cf_fingerprint.js) to your project
 
 ## Usage
+Run `npm install https://github.com/arschedev/cf-fingerprint` to install the package in your project. You can then use it from both browsers and Node.js environments.
 
-#### Browser
+### Browser
 
 ```js
 function readAsArrayBuffer(file) {
@@ -33,11 +34,10 @@ const buffer = new Uint8Array(await readAsArrayBuffer(file))
 const fingerprint = cf_fingerprint(buffer)
 ```
 
-#### Node.js
-
+### Node.js
 ```js
-const fs = require("node:fs")
-const cf_fingerprint = require("./cf_fingerprint")
+import fs from "node:fs"
+import { cf_fingerprint } from "cf-fingerprint"
 
 const file = fs.readFileSync(filename)
 const fingerprint = cf_fingerprint(file)
