@@ -1,0 +1,21 @@
+{
+  "name": "cf-fingerprint",
+  "version": "1.0.0",
+  "description": "CurseForge fingerprinting algorithm implementation in JavaScript",
+  "main": "cf_fingerprint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arschedev/cf-fingerprint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/arschedev/cf-fingerprint/issues"
+  },
+  "homepage": "https://github.com/arschedev/cf-fingerprint#readme"
+}

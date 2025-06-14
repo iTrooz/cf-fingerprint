@@ -4,7 +4,7 @@
  * https://github.com/arschedev/cf-fingerprint
  */
 
-function cf_fingerprint(buffer) {
+export function cf_fingerprint(buffer) {
 	const multiplex = uint32_t(1540483477)
 	const length = uint32_t(buffer.length)
 
@@ -61,6 +61,3 @@ function cf_fingerprint(buffer) {
 		return b == 9 || b == 10 || b == 13 || b == 32
 	}
 }
-
-// modules.export = cf_fingerprint
-// export default cf_fingerprint
