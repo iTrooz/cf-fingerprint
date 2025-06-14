@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "CurseForge fingerprinting algorithm implementation in JavaScript",
   "main": "cf_fingerprint.js",
+  "types": "cf_fingerprint.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/arschedev/cf-fingerprint.git"
