@@ -1,19 +1,25 @@
 {
-  "name": "cf-fingerprint",
-  "version": "1.0.0",
-  "description": "CurseForge fingerprinting algorithm implementation in JavaScript",
-  "main": "cf_fingerprint.js",
-  "types": "cf_fingerprint.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/arschedev/cf-fingerprint.git"
-  },
-  "keywords": [],
-  "author": "arschedev",
-  "license": "GPL-3.0",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/arschedev/cf-fingerprint/issues"
-  },
-  "homepage": "https://github.com/arschedev/cf-fingerprint"
+	"name": "cf-fingerprint",
+	"version": "0.1.0",
+	"description": "CurseForge fingerprinting algorithm implementation in JavaScript",
+	"main": "cf_fingerprint.js",
+	"types": "cf_fingerprint.d.ts",
+	"scripts": {
+		"format": "prettier --write ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/arschedev/cf-fingerprint.git"
+	},
+	"keywords": [],
+	"author": "arschedev",
+	"license": "GPL-3.0",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/arschedev/cf-fingerprint/issues"
+	},
+	"homepage": "https://github.com/arschedev/cf-fingerprint",
+	"devDependencies": {
+		"prettier": "^3.5.3"
+	}
 }

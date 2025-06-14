@@ -16,7 +16,18 @@ You can then use it from both browsers and Node.js environments.
 
 ### Browser
 
+(Optional)
+
+```html
+<script type="module">
+    import { cf_fingerprint } from "./cf_fingerprint.js"
+    window.cf_fingerprint = cf_fingerprint
+</script>
+```
+
 ```js
+// import { cf_fingerprint } from "cf-fingerprint"
+
 function readAsArrayBuffer(file) {
     return new Promise((resolve, reject) => {
         const reader = new FileReader()
@@ -38,6 +49,7 @@ const fingerprint = cf_fingerprint(buffer)
 ```
 
 ### Node.js
+
 ```js
 import fs from "node:fs"
 import { cf_fingerprint } from "cf-fingerprint"
