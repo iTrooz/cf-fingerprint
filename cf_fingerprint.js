@@ -9,7 +9,7 @@ export function cf_fingerprint(rawBuffer) {
 
   const filteredBuffer = filterWhitespace(rawBuffer);
   let filteredLength = filteredBuffer.length;
-  let fingerprint = (1 ^ filteredLength);
+  let fingerprint = 1 ^ filteredLength;
 
   let chunkFingerprint = 0;
   let chunkAcc = 0;
@@ -35,7 +35,7 @@ export function cf_fingerprint(rawBuffer) {
   }
 
   let num6 = Math.imul(fingerprint ^ (fingerprint >>> 13), multiplex);
-  let result = num6 ^ (num6 >>> 15);
+  let result = (num6 ^ (num6 >>> 15)) >>> 0;
 
   return result;
 }
