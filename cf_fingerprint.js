@@ -40,11 +40,18 @@ export function cf_fingerprint(rawBuffer) {
   return result;
 }
 
+// filter buffer in-place
 function filterWhitespace(buffer) {
   const ws = new Set([9, 10, 13, 32]);
-  const filtered = [];
+  let currentIndex = 0;
   for (let i = 0; i < buffer.length; i++) {
-    if (!ws.has(buffer[i])) filtered.push(buffer[i]);
+    if (!ws.has(buffer[i])) {
+      // write non-whitespace byte to the current index
+      if (currentIndex !== i) {
+        buffer[currentIndex] = buffer[i];
+      }
+      currentIndex++;
+    }
   }
-  return filtered;
+  return buffer.subarray(0, currentIndex);
 }
