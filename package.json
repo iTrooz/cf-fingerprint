@@ -1,6 +1,6 @@
 {
 	"name": "cf-fingerprint",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "CurseForge fingerprinting algorithm implementation in JavaScript",
 	"main": "cf_fingerprint.js",
 	"types": "cf_fingerprint.d.ts",
