@@ -2,7 +2,7 @@
 
 CurseForge fingerprinting algorithm implementation in JavaScript
 
-Based on [curseforge-fingerprint](https://github.com/meza/curseforge-fingerprint/blob/main/src/addon/fingerprint.cpp) in C++
+Originally based on [curseforge-fingerprint](https://github.com/meza/curseforge-fingerprint/blob/main/src/addon/fingerprint.cpp) in C++
 
 ## Install
 
